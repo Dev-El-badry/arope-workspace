@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard/tabs/quotation"></ion-back-button>
+      </ion-buttons>
+    <ion-title>Family Travel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<super-tabs >
+    <super-tabs-toolbar slot="top" color="dark" >
+      <super-tab-button color="light">
+        <ion-icon name="people"></ion-icon>
+        <ion-label>Travelers</ion-label>
+      </super-tab-button>  
+      <super-tab-button>
+        <ion-icon name="paper-plane" ></ion-icon>
+        <ion-label>Fill Information</ion-label>
+      </super-tab-button>  
+    </super-tabs-toolbar>
+
+    <super-tabs-container>
+      <super-tab>
+        <ion-content>
+          <ion-nav  [root]="travelersPage" #travelersNav></ion-nav>
+        </ion-content>
+      </super-tab>
+
+      <super-tab>
+        <ion-content>
+          <ion-nav  [root]="quotePage" #quoteNav></ion-nav>
+        </ion-content>
+      </super-tab>
+    </super-tabs-container>
+
+
+</super-tabs>
+
+
+
+<ion-content>
+
+
+
+</ion-content>
